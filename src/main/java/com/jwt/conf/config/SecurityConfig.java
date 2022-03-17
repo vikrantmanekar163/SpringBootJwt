@@ -30,6 +30,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
         auth.userDetailsService(userDetailsService);
+        System.out.println("Dummy Message for update....");
     }
     @Bean
     public PasswordEncoder passwordEncoder(){
